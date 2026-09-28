@@ -1,0 +1,39 @@
+SECMS - Salesforce Objects and Fields
+
+1. Student Object
+
+Purpose: Stores student information.
+
+Fields: - Student Name - Email - Phone - Date of Birth - Student
+Status - Address
+
+2. Course Object
+
+Purpose: Stores course information.
+
+Fields: - Course Name - Category - Duration - Course Fee - Description
+
+3. Instructor Object
+
+Purpose: Stores instructor information.
+
+Fields: - Instructor Name - Instructor Code - Expertise - Phone - Email
+
+4. Enrollment Object
+
+Purpose: Stores student enrollment information.
+
+Fields: - Student - Course - Instructor - Enrollment Date - Enrollment
+Status - Fees Paid - Total Amount - Comments
+
+5. Relationships
+
+Enrollment has Lookup Relationships with: - Student - Course -
+Instructor
+
+6. Record Types
+
+Enrollment contains: - New Enrollment - Re-Enrollment
+
+Note: Exact additional Salesforce API names not specified in the project
+document are not listed here.

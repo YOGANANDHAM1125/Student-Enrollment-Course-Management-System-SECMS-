@@ -1,0 +1,16 @@
+SECMS - Approval Process
+
+Approval Process Name: Approval_Enrollment_Request
+
+Purpose: Manages approval of enrollment requests.
+
+Entry Criteria: Enrollment_Status__c = “Requested”
+
+Approver: Training Manager
+
+Final Approval Action: - Enrollment status is set to Approved.
+
+Final Rejection Action: - Enrollment status is set to Rejected. -
+Rejection email is sent.
+
+Status: The approval process is activated in Salesforce.

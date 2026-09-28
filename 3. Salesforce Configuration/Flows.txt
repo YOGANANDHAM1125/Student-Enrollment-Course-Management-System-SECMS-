@@ -1,0 +1,37 @@
+SECMS - Salesforce Flows
+
+1. SetEnrollmentDate
+
+Type: Record-Triggered Flow
+
+Purpose: Automatically sets the enrollment date when an Enrollment
+record is created.
+
+Configured action: Enrollment_Date__c = $Flow.CurrentDate
+
+2. Enrollment Approved Action
+
+Type: Update-Triggered Flow
+
+Purpose: Runs when an enrollment status becomes Approved.
+
+Actions described in the project: - Send an email to the student. -
+Optionally notify the Admin. - Update Student Status to Active.
+
+3. AutoAssign_Instructor
+
+Purpose: Automatically assigns an instructor based on Course Category.
+
+Logic: - Technical -> Instructor A - Language -> Instructor B -
+Non-Technical -> Instructor C
+
+The flow gets the related Course, evaluates the category, gets the
+appropriate Instructor, and updates the Enrollment Instructor field.
+
+4. Create_Followup_Task
+
+Purpose: Creates a follow-up Task when an Enrollment status is
+Requested.
+
+Task details: - Assigned to Admin - Due Date: Today + 2 days - Related
+record (WhatId): Enrollment

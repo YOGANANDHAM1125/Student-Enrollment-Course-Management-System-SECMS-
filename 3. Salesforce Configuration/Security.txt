@@ -1,0 +1,32 @@
+SECMS - Salesforce Security Setup
+
+Access Configuration
+
+1. Admin
+
+Access: Full access to the system.
+
+2. Enrollment Officer
+
+Access: Create and update Enrollments.
+
+3. Instructor
+
+Access: Read-only access to assigned enrollments.
+
+Permission Sets
+
+Permission sets are used as part of the security configuration.
+
+Organization-Wide Defaults (OWD)
+
+-   Students: Public Read/Write
+-   Courses: Public Read/Write
+-   Enrollments: Private
+
+Instructor access can optionally use owner-based access as described in
+the project document.
+
+Note: The exact Salesforce profile/permission-set names used in the org
+are not specified in the project document, so they are not invented
+here.

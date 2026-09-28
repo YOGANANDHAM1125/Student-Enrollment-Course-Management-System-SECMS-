@@ -1,0 +1,32 @@
+SECMS - Reports and Dashboard
+
+REPORTS
+
+1. Students by Status
+
+Purpose: Shows students grouped according to their status.
+
+2. Enrollments by Course
+
+Purpose: Shows enrollment information grouped by course.
+
+3. Pending Enrollment Approvals
+
+Purpose: Shows enrollments that are pending approval.
+
+4. Revenue Report - Fees Paid
+
+Purpose: Shows revenue information based on fees paid.
+
+DASHBOARD
+
+Dashboard Name: Student Management Dashboard
+
+Components: 1. Students by Status - Donut Chart
+
+2.  Enrollments by Course
+    -   Bar Chart
+3.  Revenue Report
+    -   Gauge
+4.  Pending Approvals
+    -   Table

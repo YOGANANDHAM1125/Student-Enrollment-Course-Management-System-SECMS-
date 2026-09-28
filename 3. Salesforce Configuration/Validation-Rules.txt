@@ -1,0 +1,20 @@
+SECMS - Validation Rules
+
+1. Student_Email_Domain_Validation
+
+Purpose: Validates that the student’s email uses the required
+institutional domain.
+
+Formula: NOT(CONTAINS(Email__c, “@student.edu”))
+
+Error Message: Email must be a valid student institutional email.
+
+2. Fees_Must_Be_Paid_Before_Approval
+
+Purpose: Prevents an enrollment from being approved when fees have not
+been paid.
+
+Formula: AND( ISPICKVAL(Enrollment_Status__c, “Approved”), Fees_Paid__c
+= FALSE )
+
+Error Message: Fees must be paid before approving an enrollment.
